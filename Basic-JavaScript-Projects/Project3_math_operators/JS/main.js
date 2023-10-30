@@ -1,4 +1,4 @@
-//Displays an a alert with a random number between 1-50 with 1 decmial points allowed
+//Displays an a alert with a random number between 1-50 with 1 decmial points allowed 
 window.alert(Math.random().toFixed(2)* 50) ;
 //This is a addition function
 function addition_Function() {
