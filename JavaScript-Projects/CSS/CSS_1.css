@@ -1,0 +1,42 @@
+.formheader {
+    background-color: midnightblue;
+    border: 5px solid;
+    text-align: center;
+    margin: 10px 1em;
+    border-radius: 7px;
+    
+}
+.formheader h1 {
+    color: gainsboro;
+}
+
+form {
+    background-color: lightslategray;
+    padding: 20px ;
+    align-content: center;
+    border-top: 3px solid;
+}
+
+form label {
+    font-weight: bold;
+
+}
+
+form input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8D8E8F;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, .15);
+    font-family: 'Raleway', sans-serif;
+}
+.button {
+    background-color: lightblue;
+    border: 2px solid black;
+}

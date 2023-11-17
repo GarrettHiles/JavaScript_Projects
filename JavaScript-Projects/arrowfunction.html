@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="butt">Click</button>
+        <p id="hi"></p>
+        <script>
+            let hello = "";
+            
+            hello = () => {
+                document.getElementById("hi").innerHTML += this;
+            }
+            window.addEventListener("load", hello);
+            document.getElementById("butt").addEventListener("click", hello);
+        </script>
+    </body>
+</html>
