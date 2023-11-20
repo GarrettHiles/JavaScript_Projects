@@ -1,0 +1,161 @@
+/*----------------------------------------------------
+Basic Styles
+------------------------------------------------------*/
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 87.5%;
+}
+.submission-form {
+    max-width: 50%;
+    background-color: grey;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    border: 5px solid;
+    border-color: black;
+    box-shadow: 1px 1px 1px 0px gold;
+
+}
+.submission-form h2{
+    text-align: center;
+    padding: auto;
+    font-size: large;
+}
+.submission-form p{
+    text-align: center;
+    font-size: medium;
+    padding: auto;
+}
+.submission-form form{
+    background-color: lightgrey;
+    border: 5px;
+    border: solid;
+    border-color: black;
+    padding: 15px;
+    text-align: center;
+
+
+}
+.submission-form input{
+    width: 35%;
+    margin: 10px 1em;
+    border: solid;
+    border-radius: 7px;
+    padding: 2% 1% 1% 7%;
+}
+
+.terms{
+    text-align: center;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Creates 4 columns that floats next to eachother*/
+
+.column {
+    float: left;
+    width: 20%;
+}
+
+.model{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.model-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.close{
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container{
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.control{
+    opacity: 0.6s;
+}
+.active, .control:hover{
+    opacity: 1;
+}
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
