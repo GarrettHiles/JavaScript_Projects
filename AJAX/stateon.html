@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is diff</title>
+    </head>
+    <body>
+        <h2>Get the latest message:</h2>
+        <div class="message" id="message">
+            <input type="button" class="button" value="Get message" id="message_content" onclick="getMessage();">
+        </div>
+        <script type="text/javascript">
+            var mess = new XMLHttpRequest();
+            mess.open('GET', 'message.html');
+            mess.onreadystatechange = function() {
+            if (mess.readyState == 4) {
+            document.getElementById('message').innerHTML = mess.responseText;
+         }
+        }
+
+        function getMessage() {
+             mess.send();
+            document.getElementById("message_content").style.display = 'none';
+        }
+        </script>
+    </body>
+</html>
