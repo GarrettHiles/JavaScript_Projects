@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <script>
+      $(document).ready(function() {
+        $("html").append( //adding all this to the html
+        "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic JQery</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("#2").css({"color":"red"});//changes the 2nd paragraph red
+        $("#3").click(function(){//click on paragraph 3 to hide the header fast
+            $('h1').hide("fast");
+        });
+        $("#1").click(function(){ //click on paragraph 1 to show the header slowly.
+            $('h1').show("slow");
+        });
+      });
+    </script>
+</html>
